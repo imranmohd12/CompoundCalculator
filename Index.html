@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Compound Calculator</title>
+    <style>
+        tr,td{
+            text-align: left;
+        }
+        th{
+            color: darkgreen;
+        }
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            color:darkmagenta
+        }
+        input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mb-3">
+        <h1>Compound Calculator</h1>
+        <input type="text" id="amount" class="form-control" placeholder="Enter Capital">
+        <input type="text" id="percent" class="form-control" placeholder="Compound percentage">
+        <input type="text" id="times" class="form-control" placeholder="How many times">
+        <button onclick="calculate()" class="btn btn-primary">Calculate</button>
+        <div>
+            <table id="result" class="table table-striped">
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
